@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#wmu{
+    background-color: red;
+    opacity: .9;
+    border-style: dotted;
+    margin: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
+    outline: 10px green solid;
+}
+
+.ital{
+    font-style: italic;
+}
