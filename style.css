@@ -1,11 +1,12 @@
 body{
     background-color: black;
     color: white;
+    font-size: 30px;
 }
 
 #wmu{
     background-color: red;
-    opacity: .9;
+    opacity: 1.0;
     border-style: dotted;
     margin: 50px 50px 50px 50px;
     padding: 50px 50px 50px 50px;
@@ -15,3 +16,66 @@ body{
 .ital{
     font-style: italic;
 }
+
+.header{
+  border-bottom: 2px solid #dddddd ;
+}
+
+
+/* Navigation Bar */
+
+nav{
+    position: -webkit-sticky; /*For Safari browsers */
+    position: sticky;
+    top:0;
+
+    /*makes the nav bar center on horizontal plain*/
+    /* max-width:fit-content;
+    margin:auto; */
+}
+
+.navUL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+.navItem{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+.navItem:last-child{
+    border-right: none;
+}
+
+.navLink {
+    display: block;
+    padding:14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color:black
+}
+
+.navItem:visited{
+    text-decoration: none;
+}
+
+.navLink:hover{
+    background-color: blueviolet;
+    color:white;
+}
+
+.active{
+    background-color: hotpink;
+    color:white;
+    /* text-decoration: none; */
+}
+
+footer{
+    max-width: fit-content;
+    margin:auto;
+    font-size: 12px;
+}
+
