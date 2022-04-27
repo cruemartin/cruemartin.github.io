@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/****************************************************ELEMENTS****************************************************/
 body{
     background-color: black;
     color: white;
@@ -24,14 +30,14 @@ h4{
     font-size: 25px;
 }
 
-#wmu{
-    background-color: red;
-    opacity: 1.0;
-    border-style: dotted;
-    margin: 50px 50px 50px 50px;
-    padding: 50px 50px 50px 50px;
-    outline: 10px green solid;
+
+footer{
+    max-width: fit-content;
+    margin:auto;
+    font-size: 12px;
 }
+
+
 
 .ital{
     font-style: italic;
@@ -41,9 +47,7 @@ h4{
   border-bottom: 2px solid #dddddd ;
 }
 
-
-/* Navigation Bar */
-
+/****************************************************NAV BAR****************************************************/
 nav{
     position: -webkit-sticky; /*For Safari browsers */
     position: sticky;
@@ -93,15 +97,69 @@ nav{
     color:white;
 }
 
-.active{
+.navActive{
     background-color: hotpink;
     color:white;
     /* text-decoration: none; */
 }
 
-footer{
-    max-width: fit-content;
-    margin:auto;
-    font-size: 12px;
+/****************************************************CARDS****************************************************/
+.card{
+    display:flex;
+    flex-direction: column;
+    /* margin:auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding:25px;
+    border: 2px solid whitesmoke;
+    box-shadow: 5px 5px 9px whitesmoke;
+    border-radius: 25px;
+    vertical-align: bottom;
 }
 
+.card:hover{
+    color:black;
+    background-color: white;
+}
+
+.card:hover .top-row{
+    border-bottom: 5px dashed black;
+}
+
+.top-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border-bottom: 5px dashed whitesmoke;  
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col-0{
+    flex:100%;
+}
+
+.col-1{
+    flex:75%;
+    text-indent: 25px;
+}
+
+.col-2{
+    flex:25%;
+    text-align: right;
+}
+
+.col-full{
+    flex:100%;
+    text-indent: 25px;
+}
+
+
+.degree{
+    font-size: 35;
+}

@@ -10,7 +10,7 @@
 	</header>
 	<nav>
 		<ul class = "navUL">
-			<li class="navItem"><a class="active navLink" href="#home">Home</a></li>
+			<li class="navItem"><a class="navActive navLink" href="#home">Home</a></li>
 			<li class = "navItem"><a class = "navLink" href="#workExperience">Experience</a></li>
 			<li class = "navItem"><a class = "navLink" href="#education">Education</a></li>
 			<li class = "navItem"><a class = "navLink" href="#projects">Projects</a></li>
@@ -26,7 +26,7 @@
 		<div id="workExperince">
 			<div id="car">
 				<h3>Complete Automation Resource</h3>
-				<p>December 2019 - present</p>
+				<p class="time">December 2019 - present</p>
 				<p>Cedar Springs, MI</p>
 				<p>Software Developer</p>
 				<p>Created an HMI software to track parts produced, scrap created, and downtime length for machines
@@ -41,19 +41,25 @@
 		</div>
 		<div id="education">
 			<h2 class="header">Education</h2>
-			<div id = "wmu">
-				<h3>Bachelor of Science in Computer Science</h3>
-				<p>Western Michigan University<br>
-				GPA <span class="ital">(4.0 scale)</span> 3.1<br>
-				Studied the core concepts required to earn a Bachelors of Science in Computer Science</p>
-				<p>September 2016-May 2019</p>
-				<p>Kalamazoo, MI</p>
-			</div>
-			<div id = "grcc">
-				<p>Associate of General Studies</p>
-				<p>Grand Rapids Community College</p>
-				<p>Studied general courses required to complete a Bachelors Degree.</p>
-				<p>January 2014-May 2016</p>
+
+			<div class = "card">
+					<div class="top-row">
+						<div class = "col-0 degree">Bachelor of Science in Computer Science</div>
+					</div>
+
+					<div class="row">
+						<div class = "col-1">Western Michigan University</div>
+						<div class = "col-2">Kalamazoo, MI</div>		
+					</div>
+
+					<div class="row">
+						<div class = "col-1">GPA <span class="ital">(4.0 scale)</span>: 3.1</div>
+						<div class = "col-2">September 2016-May 2019</div>
+					</div>
+
+					<div class="row">
+						<div class = "col-full">Studied the core concepts required to earn a Bachelors of Science in Computer Science</div>	
+					</div>				
 			</div>
 		</div>
 		<div id="projects">
