@@ -1,5 +1,9 @@
 <html>
 	<head>
+		<title>Crue Martin || Software Developer</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
@@ -10,175 +14,199 @@
 	</header>
 	<nav>
 		<ul class = "navUL">
-			<li class="navItem"><a class="navActive navLink" href="#home">Home</a></li>
-			<li class = "navItem"><a class = "navLink" href="#workExperience">Experience</a></li>
-			<li class = "navItem"><a class = "navLink" href="#education">Education</a></li>
-			<li class = "navItem"><a class = "navLink" href="#projects">Projects</a></li>
-			<li class = "navItem"><a class = "navLink" href="#skills">Skills</a></li>
-			<li class = "navItem"><a class = "navLink" href="#about">About</a></li>
+			<li class = "navItem"><a onclick="changeActive(this)" id="homeLink" class="navActive navLink" href="#home">Home</a></li>
+			<li class = "navItem"><a onclick="changeActive(this)" id="expLink" class = "navLink" href="#workExperience">Experience</a></li>
+			<li class = "navItem"><a onclick="changeActive(this)" id="eduLink" class = "navLink" href="#education">Education</a></li>
+			<li class = "navItem"><a onclick="changeActive(this)" id="projectLink" class = "navLink" href="#projects">Projects</a></li>
+			<li class = "navItem"><a onclick="changeActive(this)" id="skillsLink" class = "navLink" href="#skills">Skills</a></li>
+			<li class = "navItem"><a onclick="changeActive(this)" id="aboutLink" class = "navLink" href="#about">About</a></li>
 		</ul>
 	</nav>
 
-	<main>
-		<div id="intro">
+	<div class="row">
 
-		</div>
-		<div id="workExperince">
-			<div id="car">
-				<h3>Complete Automation Resource</h3>
-				<p class="time">December 2019 - present</p>
-				<p>Cedar Springs, MI</p>
-				<p>Software Developer</p>
-				<p>Created an HMI software to track parts produced, scrap created, and downtime length for machines
-					running in a manufacturing environment.
-					Installed hardware used to collect data and run HMI software in a manufacturing environment.
-					Worked on navigation software used for Automated Guided Carts (AGC).
-					Assisted with troubleshooting AGC software.
-					Assisted costumers with trouble shooting software issues.
-					Worked with costumers on design and functionality requirements for software.</p>
+		<div class="side">
+			<div id="skills">
+				<h2 class="header">Skills</h2>
+	
+				<div id = "programming">
+					<p>Programming Languages</p>
+					<ul>
+						<li>Python</li>
+						<li>Java</li>
+						<li>JavaScript</li>
+						<li>C</li>
+						<li>Node.js</li>
+					</ul>
+	
+					<p>Databases Technologies</p>
+					<ul>
+						<li>SQL Server</li>
+						<li>MySQL</li>
+						<li>MariaDB</li>
+					</ul>
+				</div>
+	
+				<div id = "frameworks">
+					<p>Frameworks</p>
+					<ul>
+						<li>BootStrap</li>
+						<li>Flask</li>
+					</ul>
+				</div>
+				<div id = "os">
+					<p>Operating Systems</p>
+					<ul>
+						<li>Ubuntu</li>
+						<li>Windows 10</li>
+						<li>Manjaro</li>
+						<li>Linux Mint</li>
+					</ul>
+				</div>
+	
+				<div id = "software">
+					<p>Software</p>
+					<ul>
+						<li>Visual Studio Code</li>
+						<li>Eclipse</li>
+						<li>Microsoft SQL Server Mangement Studio</li>
+						<li>Git</li>
+						<li>Ignition 8.1</li>
+						<li>Ignition 7.9</li>
+					</ul>
+				</div>
+	
+				<div id = "certs">
+					<p>Certifications</p>
+					<ul>
+						<li>Ignition GOLD Certification</li>
+						<li>Ignition CORE Certification</li>
+					</ul>
+				</div>
+			
+	
 			</div>
-
 		</div>
-		<div id="education">
-			<h2 class="header">Education</h2>
 
-			<div class = "card">
-					<div class="top-row">
-						<div class = "col-0 degree">Bachelor of Science in Computer Science</div>
+		<div class="main">
+			<div id="intro">
+	
+			</div>
+			<div id="workExperince">
+				<h2 class="header">Experience</h2>
+				<div id="car">
+					<h3>Complete Automation Resource</h3>
+					<p class="time">December 2019 - present</p>
+					<p>Cedar Springs, MI</p>
+					<p>Software Developer</p>
+					<p>Created an HMI software to track parts produced, scrap created, and downtime length for machines
+						running in a manufacturing environment.
+						Installed hardware used to collect data and run HMI software in a manufacturing environment.
+						Worked on navigation software used for Automated Guided Carts (AGC).
+						Assisted with troubleshooting AGC software.
+						Assisted costumers with trouble shooting software issues.
+						Worked with costumers on design and functionality requirements for software.</p>
+				</div>
+	
+			</div>
+			<div id="education">
+				<h2 class="header">Education</h2>
+	
+				<div class = "card">
+						<div class="top-card-row">
+							<div class = "card-col-0 degree">Bachelor of Science in Computer Science</div>
+						</div>
+	
+						<div class="card-row">
+							<div class = "card-col-1 institution">Western Michigan University</div>
+							<div class = "card-col-2">Kalamazoo, MI</div>		
+						</div>
+	
+						<div class="card-row">
+							<div class = "card-col-1">GPA <span class="ital">(4.0 scale)</span>: 3.1</div>
+							<div class = "card-col-2">September 2016 - May 2019</div>
+						</div>
+	
+						<div class="card-row">
+							<div class = "card-col-full">Studied the core concepts required to earn a Bachelors of Science in Computer Science.</div>
+						</div>
+						<div class="card-card-row">
+							<div class="card-card-col-full"><span class="underline">Graduate Level Courses Completed</span><span class="small-text">: Artificial Intelligence, Machine Learning</span></div>
+						</div>
+						<div class ="card-card-row">
+							<div class ="card-card-col-full"><span class="underline">Undergradate Level Courses Completed</span><span class="small-text">: Design And Analysis Of Algorithms, Data And File Structures,
+								Operating Systems, System Programming Concepts, Computer Organization And Assembly, Computer Science II, Computer Science I, Linear Algrebra,
+								Discrete Mathmatics.</span>
+							</div>
+						</div>
+				</div>
+	
+				<div class = "card">
+					<div class = "top-card-row">
+						<div class="card-col-0 degree">Associtate of General Studies</div>
 					</div>
-
-					<div class="row">
-						<div class = "col-1">Western Michigan University</div>
-						<div class = "col-2">Kalamazoo, MI</div>		
+					<div class="card-row">
+						<div class="card-col-1 institution">Grand Rapids Community College</div>
+						<div class="card-col-2">Grand Rapids, MI</div>
 					</div>
-
-					<div class="row">
-						<div class = "col-1">GPA <span class="ital">(4.0 scale)</span>: 3.1</div>
-						<div class = "col-2">September 2016 - May 2019</div>
+					<div class ="card-row">
+						<div class="card-col-1"></div>
+						<div class="card-col-2">January 2014 - May 2016</div>
 					</div>
-
-					<div class="row">
-						<div class = "col-full">Studied the core concepts required to earn a Bachelors of Science in Computer Science</div>	
-					</div>				
-			</div>
-
-			<div class = "card">
-				<div class = "top-row">
-					<div class="col-o degree">Associtate of General Studies</div>
-				</div>
-				<div class="row">
-					<div class="col-1">Grand Rapids Community College</div>
-					<div class="col-2">Grand Rapids, MI</div>
-				</div>
-				<div class ="row">
-					<div class="col-1"></div>
-					<div class="col-2">January 2014 - May 2016</div>
-				</div>
-				
-				<div class = "row">
-					<div class ="col-full">Studied the general prerequisites needed for a Bachelor degree.</div>
+					
+					<div class = "card-row">
+						<div class ="card-col-full">Studied the general prerequisites needed for a Bachelor degree.</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="projects">
-			<h2 class="header">Projects</h2>
-			<div id="personal">
-				
-			</div>
-			<div id="academic">
-
-				<div>
-					<h4>Consumers Energy PC Upgrade Ticketing Web Application</h4>
-					<p>Worked with a team to create a web application for Consumers Energy's Business Partner Services to track employee PC upgrades</p>
-					<p>Technologies used: Node.js, HandleBars, Express, HTML, CSS, and BootStrap</p>
+			<div id="projects">
+				<h2 class="header">Projects</h2>
+				<div id="personal">
+					
 				</div>
-
-				<div>
-					<h3>LiveMusicGram!</h3>
-					<p>Worked with a partner to create an Imgur clone for uploading images of live music events.</p>
-					<p>Technologies used: PHP, MySQL, HTML, CSS, BootStrap, and JavaScript</p>
+				<div id="academic">
+	
+					<div>
+						<h4>Consumers Energy PC Upgrade Ticketing Web Application</h4>
+						<p>Worked with a team to create a web application for Consumers Energy's Business Partner Services to track employee PC upgrades</p>
+						<p>Technologies used: Node.js, HandleBars, Express, HTML, CSS, and BootStrap</p>
+					</div>
+	
+					<div>
+						<h3>LiveMusicGram!</h3>
+						<p>Worked with a partner to create an Imgur clone for uploading images of live music events.</p>
+						<p>Technologies used: PHP, MySQL, HTML, CSS, BootStrap, and JavaScript</p>
+					</div>
+	
+					<div>
+						<h3>GPUButter</h3>
+						<p>Worked with a team to build a web application to compare average FPS between GPU's for popular games.</p>
+						<p>Technologies used: PHP, MySQL, HTML, CSS, BootStrap, and JavaScript</p>
+					</div>
+	
 				</div>
-
-				<div>
-					<h3>GPUButter</h3>
-					<p>Worked with a team to build a web application to compare average FPS between GPU's for popular games.</p>
-					<p>Technologies used: PHP, MySQL, HTML, CSS, BootStrap, and JavaScript</p>
-				</div>
-
 			</div>
-		</div>
-
-		<div id="skills">
-			<h2 class="header">Skills</h2>
-
-			<div id = "programming">
-				<p>Programming Languages</p>
-				<ul>
-					<li>Python</li>
-					<li>Java</li>
-					<li>JavaScript</li>
-					<li>C</li>
-					<li>Node.js</li>
-				</ul>
-
-				<p>Databases Technologies</p>
-				<ul>
-					<li>SQL Server</li>
-					<li>MySQL</li>
-					<li>MariaDB</li>
-				</ul>
+	
+			
+	
+			<div id="about">
+	
 			</div>
-
-			<div id = "frameworks">
-				<p>Frameworks</p>
-				<ul>
-					<li>BootStrap</li>
-					<li>Flask</li>
-				</ul>
-			</div>
-			<div id = "os">
-				<p>Operating Systems</p>
-				<ul>
-					<li>Ubuntu</li>
-					<li>Windows 10</li>
-					<li>Manjaro</li>
-					<li>Linux Mint</li>
-				</ul>
-			</div>
-
-			<div id = "software">
-				<p>Software</p>
-				<ul>
-					<li>Visual Studio Code</li>
-					<li>Eclipse</li>
-					<li>Microsoft SQL Server Mangement Studio</li>
-					<li>Git</li>
-					<li>Ignition 8.1</li>
-					<li>Ignition 7.9</li>
-				</ul>
-			</div>
-
-			<div id = "certs">
-				<p>Certifications</p>
-				<ul>
-					<li>Ignition GOLD Certification</li>
-					<li>Ignition CORE Certification</li>
-				</ul>
-			</div>
-		
-
-		</div>
-
-		<div id="about">
-
+	
+	
 		</div>
 
 
-	</main>
+	</div>
+
+
+	
 
 	<footer>
 		<h4>Copyright 2022 Crue Martin</h4>
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 
 </html>

@@ -1,165 +1,225 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-
-/****************************************************ELEMENTS****************************************************/
-body{
-    background-color: black;
-    color: white;
-    font-size: 20px;
+/****************************************************HTML ELEMENTS****************************************************/
+body {
+  background-color: black;
+  color: white;
+  font-size: 20px;
 }
 
 p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
-h1{
-    font-size: 50px;
+h1 {
+  font-size: 50px;
 }
 
-h2{
-    font-size: 35px;
+h2 {
+  font-size: 35px;
 }
 
-h3{
-    font-size: 30px;
+h3 {
+  font-size: 30px;
 }
 
-h4{
-    font-size: 25px;
+h4 {
+  font-size: 25px;
 }
 
-
-footer{
-    max-width: fit-content;
-    margin:auto;
-    font-size: 12px;
+footer {
+  max-width: fit-content;
+  margin: auto;
+  font-size: 12px;
 }
 
+/****************************************************PAGE LAYOUT****************************************************/
 
+/*mobile screens*/
 
-.ital{
-    font-style: italic;
-}
-
-.header{
-  border-bottom: 2px solid #dddddd ;
-}
-
-/****************************************************NAV BAR****************************************************/
-nav{
-    position: -webkit-sticky; /*For Safari browsers */
-    position: sticky;
-    top:0;
-
-    /*makes the nav bar center on horizontal plain*/
-    /* max-width:fit-content;
-    margin:auto; */
-}
-
-.navUL {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #dddddd;
-}
-.navItem{
-    float: left;
-    border-right: 1px solid #bbb;
-}
-
-.navItem:nth-last-child(2){
-    border-right: none;
-}
-
-.navItem:last-child{
-    border-right: none;
-    float: right;
-    border-left: 1px solid #bbb;
-}
-
-.navLink {
-    display: block;
-    padding:14px 16px;
-    text-align: center;
-    text-decoration: none;
-    color:black
-}
-
-.navItem:visited{
-    text-decoration: none;
-}
-
-.navLink:hover{
-    background-color: blueviolet;
-    color:white;
-}
-
-.navActive{
-    background-color: hotpink;
-    color:white;
-    /* text-decoration: none; */
-}
-
-/****************************************************CARDS****************************************************/
-.card{
-    display:flex;
-    flex-direction: column;
-    /* margin:auto; */
-    margin-top: auto;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding:25px;
-    border: 2px solid whitesmoke;
-    box-shadow: 5px 5px 9px whitesmoke;
-    border-radius: 25px;
-    vertical-align: bottom;
-}
-
-.card:hover{
-    color:black;
-    background-color: white;
-}
-
-.card:hover .top-row{
-    border-bottom: 5px dashed black;
-}
-
-.top-row{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    border-bottom: 5px dashed whitesmoke;  
+@media only screen and (max-width:768px){
+    .row{
+        flex-direction: column;
+    }
 }
 
 .row{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.col-0{
-    flex:100%;
+.side{
+    flex: 30%; /* Set the width of the sidebar */
+    /* background-color: #f1f1f1; Grey background color */
+    padding: 20px; /* Some padding */
+
 }
 
-.col-1{
-    flex:75%;
-    text-indent: 25px;
-}
-
-.col-2{
-    flex:25%;
-    text-align: right;
-}
-
-.col-full{
-    flex:100%;
-    text-indent: 25px;
+.main{
+    flex: 70%; /* Set the width of the main content */
+    /* background-color: white; White background color */
+    padding: 20px; /* Some padding */
 }
 
 
-.degree{
-    font-size: 35;
+
+
+
+/****************************************************NAV BAR****************************************************/
+nav {
+  position: -webkit-sticky; /*For Safari browsers */
+  position: sticky;
+  top: 0;
+
+  /*makes the nav bar center on horizontal plain*/
+  /* max-width:fit-content;
+    margin:auto; */
+}
+
+.navUL {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+.navItem {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+.navItem:nth-last-child(2) {
+  border-right: none;
+}
+
+.navItem:last-child {
+  border-right: none;
+  float: right;
+  border-left: 1px solid #bbb;
+}
+
+.navLink {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.navItem:visited {
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.navActive {
+  background-color: hotpink;
+  color: white;
+  /* text-decoration: none; */
+}
+
+/****************************************************CARDS****************************************************/
+.card {
+  display: flex;
+  flex-direction: column;
+  /* margin:auto; */
+  margin-top: auto;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 25px;
+  border: 2px solid whitesmoke;
+  box-shadow: 5px 5px 9px whitesmoke;
+  border-radius: 25px;
+  vertical-align: bottom;
+}
+
+.card:hover {
+  color: black;
+  background-color: white;
+}
+
+.card:hover .card-top-row {
+  border-bottom: 5px dashed black;
+}
+
+.card-top-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  border-bottom: 5px dashed whitesmoke;
+}
+
+/*mobile*/
+@media only screen and (max-width:768px){
+    .card-top-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        border-bottom: 5px dashed whitesmoke;
+      }
+
+}
+@media only screen and (max-width:768px){
+    .card-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+      }
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.card-col-0 {
+  flex: 100%;
+}
+
+.card-col-1 {
+  flex: 75%;
+  /* text-indent: 25px; */
+}
+
+.card-col-2 {
+  flex: 25%;
+  text-align: right;
+}
+
+.card-col-full {
+  flex: 100%;
+  /* text-indent: 25px; */
+}
+
+/****************************************************MISC****************************************************/
+.degree {
+  font-size: 35;
+  font-weight: bold;
+}
+
+.institution {
+  font-size: 30px;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.small-text {
+  font-size: 16px;
+}
+
+.ital {
+  font-style: italic;
+}
+
+.header {
+  border-bottom: 2px solid #dddddd;
 }
